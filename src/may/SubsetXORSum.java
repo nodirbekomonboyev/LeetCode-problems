@@ -1,18 +1,13 @@
 package may;
 
 public class SubsetXORSum {
-    public int subsetXORSum(int[] nums) {
-        int n = nums.length;
-        int totalSum = 0;
-        for (int i = 0; i < (1 << n); i++) {
-            int subsetXor = 0;
-            for (int j = 0; j < n; j++) {
-                if ((i & (1 << j)) != 0) {
-                    subsetXor ^= nums[j];
-                }
-            }
-            totalSum += subsetXor;
+        public int subsetXORSum(int[] nums) {
+            return helper(nums , 0 , 0);
         }
-        return totalSum;
-    }
+
+        public int helper(int[] nums, int index, int currValue){
+            if(index == nums.length) return currValue;
+
+            return helper(nums, index+1, currValue^nums[index]) + helper(nums, index+1, currValue);
+        }
 }
