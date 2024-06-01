@@ -1,4 +1,5 @@
 import arpil.*;
+import june.HammingDistance;
 import may.CountBits;
 import may.FindMaxK;
 import may.IsAnagram;
@@ -9,6 +10,11 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println((5 ^ 0));
+        HammingDistance hammingDistance = new HammingDistance();
+        int x = 10110;
+
+        System.out.println((x >> 1));
+
+        //   System.out.println(hammingDistance.hammingDistance(1, 4));
     }
 }
