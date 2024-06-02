@@ -1,5 +1,6 @@
 import arpil.*;
 import june.HammingDistance;
+import june.IslandPerimeter;
 import may.CountBits;
 import may.FindMaxK;
 import may.IsAnagram;
@@ -10,11 +11,8 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        HammingDistance hammingDistance = new HammingDistance();
-        int x = 10110;
-
-        System.out.println((x >> 1));
-
-        //   System.out.println(hammingDistance.hammingDistance(1, 4));
+        IslandPerimeter islandPerimeter = new IslandPerimeter();
+        System.out.println(islandPerimeter
+                .islandPerimeter(new int[][]{{0, 1, 0, 0}}));
     }
 }
