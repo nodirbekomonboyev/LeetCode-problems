@@ -11,7 +11,7 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-        HammingWeight hammingWeight = new HammingWeight();
-        System.out.println(hammingWeight.hammingWeight(2147483645));
+        MaxDepth maxDepth = new MaxDepth();
+        System.out.println(maxDepth.maxDepth("("));
     }
 }
