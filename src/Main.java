@@ -11,7 +11,7 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-        MaxDepth maxDepth = new MaxDepth();
-        System.out.println(maxDepth.maxDepth("("));
+        CheckIfPangram checkIfPangram = new CheckIfPangram();
+        System.out.println(checkIfPangram.checkIfPangram("qwertyuiopasdfghjklzxvbnm"));
     }
 }
