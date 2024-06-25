@@ -11,7 +11,7 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-        FindCenter findCenter = new FindCenter();
-        System.out.println(findCenter.findCenter(new int[][]{{1, 2}, {3, 1}, {1, 4}}));
+        FinalString finalString = new FinalString();
+        System.out.println(finalString.finalString("iponteri"));
     }
 }
