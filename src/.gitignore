@@ -1,0 +1,25 @@
+# Kompilyatsiya qilingan fayllar
+*.class
+*.jar
+*.war
+*.ear
+
+# Log fayllari
+*.log
+*.out
+
+# IntelliJ IDEA yoki Eclipse fayllari
+.idea/
+.classpath
+.project
+.settings/
+
+# Maven va Gradle fayllari
+/target/
+.mvn/
+/build/
+*.iml
+
+# Operating System fayllari
+.DS_Store
+Thumbs.db
