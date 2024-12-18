@@ -12,6 +12,5 @@ public class ArraySign {
         }
         return (m > 0)? 1 : -1;
     }
-
 }
 
