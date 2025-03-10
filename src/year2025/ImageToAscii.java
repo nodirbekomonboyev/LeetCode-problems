@@ -4,6 +4,11 @@ import java.io.File;
 import javax.imageio.ImageIO;
 
 public class ImageToAscii {
+
+    /***
+     * Beauty is in the eyes of the Beholder perspective is key
+     *
+     */
     public static void main(String[] args) {
         try {
             BufferedImage image = ImageIO.read(new File("C:/Users/Hp/Desktop/IMG_3231.JPEG"));
