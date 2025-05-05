@@ -16,24 +16,18 @@ public class Problem1475 {
 
     public int[] finalPrices(int[] prices) {
         int n=prices.length;
-        Stack<Integer> st=new Stack();
-
-        for(int i=n-1; i>=0; i--){
-            // Remove elements from the stack that are greater than the current price
-            while(!st.isEmpty() && st.peek()>prices[i]){
-                st.pop();
+        for(int i = 0; i < prices.length; i++){
+            prices[i] = getDiscount(prices, i, n);
+        }
+        return prices;
+    }
+    int getDiscount(int[] prices, int i, int n){
+        for(int j=i+1; j<n; j++){
+            if(prices[j]<=prices[i]){
+                return prices[i]-prices[j];
             }
-
-            // Get the discount from the stack or 0 if no valid discount
-            int discount=st.isEmpty()?0:st.peek();
-
-            // Push the original value before updating
-            st.push(prices[i]);
-
-            // Update the current price with the discount
-            prices[i]-=discount;
         }
 
-        return prices;
+        return prices[i];
     }
 }
