@@ -1,19 +1,29 @@
 package year2025;
 
+import java.util.*;
+
 public class Problem3602 {
     // https://leetcode.com/problems/hexadecimal-and-hexatrigesimal-conversion/
 
     public String concatHex36(int n) {
+        long n2 = (long) n * n;
+        long n3 = n * n2;
 
-        StringBuilder s1 = new StringBuilder();
-        int hexadecimal = n * n;
-        int i = 0;
-        while(hexadecimal > 16){
+        StringBuilder hexPart = new StringBuilder(Long.toHexString(n2).toUpperCase());
 
+        StringBuilder hexTriPart = new StringBuilder();
+        while(n3 > 0){
+            long remain = n3 % 36;
+            char c;
+            if(remain < 10){
+                c = (char)('0' + remain);
+            } else {
+                c = (char)('A' + remain - 10);
+            }
+            hexTriPart.append(c);
+            n3 /= 36;
         }
-        s1.append(1);
-
-        return "";
+        return hexPart.append(hexTriPart.reverse()).toString();
     }
     /**
      * F4240GJDGXS
