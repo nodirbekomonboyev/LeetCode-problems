@@ -27,6 +27,7 @@ public class Problem1941 {
                 return false;
             }
         }
+
         return true;
     }
 }
