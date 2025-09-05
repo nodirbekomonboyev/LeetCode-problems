@@ -1,6 +1,6 @@
 package year2025;
 
-public class Prroblem1351 {
+public class Problem1351 {
 
     //https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/
 
