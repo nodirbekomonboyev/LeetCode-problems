@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Prbolem1636 {
+public class Problem1636 {
 
     // https://leetcode.com/problems/sort-array-by-increasing-frequency/
 
